@@ -1,0 +1,35 @@
+# lista branca: só código e documentação entram no git; dados e saídas ficam fora
+*
+!*/
+!.gitignore
+!*.R
+!*.r
+!*.Rmd
+!*.qmd
+!*.py
+!*.sh
+!*.ps1
+!*.md
+!*.Rproj
+!*.sql
+!*.yml
+!*.yaml
+!*.toml
+!requirements.txt
+!DESCRIPTION
+!NAMESPACE
+
+# nunca: segredos, credenciais, deploy e ambiente local
+secrets/
+credentials/
+rsconnect/
+.Renviron
+.env
+.Rproj.user/
+.Rhistory
+.claude/
+__pycache__/
+renv/library/
+
+# página do GitHub Pages (mapa interativo publicado)
+!index.html
